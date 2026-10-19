@@ -1,0 +1,92 @@
+@font-face {
+  font-family: 'Product Sans';
+  src: url('font/product-sans-regular.ttf') format('ttf'),
+       url('font/product-sans-regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Product Sans';
+  src: url('font/product-sans-bold.ttf') format('ttf'),
+       url('font/product-sans-bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+*{
+    font-family: 'Product Sans', sans-serif;
+}
+body {
+
+  background-color: rgb(60, 60, 60);
+}
+
+.logo {
+  font-weight: 500;
+  font-size: 90px;
+  color:white;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  width: 100%;
+  margin-top: 150px;
+}
+a{
+    text-decoration: none;
+}
+.searchbar{
+    background-color: white;
+    border-radius: 25px;
+    font: 16px 'Product Sans', sans-serif;
+    display: flex;
+    align-items: center; 
+    height: 50px;
+    width: 500px;
+    padding-left: 40px;
+    margin: auto;   
+}
+.search{
+    flex: 1;                       /* Allows input to take up remaining space */
+  border: none;                  /* Removes the default rectangular border */
+  outline: none;                 /* Removes focus outline */
+  background: transparent;
+  font-size: 16px;
+  padding-right: 12px;
+  margin-right:150px;
+}
+.buttons{
+    position:absolute;
+    top: 0;
+    width:97%;
+    box-sizing: border-box;
+    margin-top:20px;
+    text-align: right;
+}
+.yt-subscribe-btn {
+  /* Colors & Typography */
+  background-color: #242222;
+  color: #ffffff;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  
+  /* Layout & Sizing */
+  padding: 0 16px;
+  height: 36px;
+  border: none;
+  border-radius: 18px; /* Creates the perfect pill shape */
+  
+  /* Interactions */
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+
+/* Hover effect to mimic YouTube's lighter black shade */
+.yt-subscribe-btn:hover {
+  background-color: #313131;
+}
+
+/* Optional: Active state when clicking */
+.yt-subscribe-btn:active {
+  transform: scale(0.98);
+}
